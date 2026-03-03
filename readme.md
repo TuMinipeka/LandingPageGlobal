@@ -21,7 +21,7 @@ El proyecto está organizado de la siguiente forma:
 │   ├── css/                # Contiene los archivos .css específicos de cada landing page
 │   └── image/              # Activos gráficos e imágenes clasificadas por página
 └── index.html              # Página principal con el índice interactivo de todas las landing pages
-└── README.md               # Este archivo
+└── readme.md               # Este archivo
 ```
 
 ## 📋 Páginas Incluidas
