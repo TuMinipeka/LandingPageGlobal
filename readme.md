@@ -53,11 +53,6 @@ No se requiere ningún marco de trabajo (*framework*) o servidor especial para v
 3. Haz doble clic en el archivo `landing-pages/index.html` para abrirlo en tu navegador web predeterminado.
 4. Desde el índice, puedes navegar y probar el diseño responsivo de cada una de las 15 landing pages.
 
-
-<<<<<<< HEAD >>>>>>> 
-## 👤 Autores:
-**Daniel Mayorga**    
-=======
 ## 👤 Autores
 **Daniel Mayorga**
 
