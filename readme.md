@@ -52,8 +52,7 @@ No se requiere ningún marco de trabajo (*framework*) o servidor especial para v
 2. Abre la carpeta del proyecto.
 3. Haz doble clic en el archivo `landing-pages/index.html` para abrirlo en tu navegador web predeterminado.
 4. Desde el índice, puedes navegar y probar el diseño responsivo de cada una de las 15 landing pages.
-## link repositorio global
-https://github.com/TuMinipeka/LandingPageGlobal.git
+
 
 ## 👤 Autores
 **Daniel Mayorga**
