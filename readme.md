@@ -54,7 +54,7 @@ No se requiere ningún marco de trabajo (*framework*) o servidor especial para v
 4. Desde el índice, puedes navegar y probar el diseño responsivo de cada una de las 15 landing pages.
 
 
-<<<<<<< HEAD >>>>>>> dfc98fe0e90a2a19cafd3c631cae957c5126e9da
+<<<<<<< HEAD >>>>>>> 
 ## 👤 Autores:
 **Daniel Mayorga**    
 =======
