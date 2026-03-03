@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(20, 20, 20);
+    color: var(--text-light);
+}
+
+.section {
+    background: rgb(20, 20, 20);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.general {
+    width: min(1200px, 95vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+
+.texto h1 {
+    font-weight: 800;
+    font-size: clamp(2rem, 6vw, 6rem);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.texto .rosado {
+    color: rgb(255, 175, 187);
+}
+
+.texto .azul {
+    color: rgb(164, 164, 255);
+}
+
+.texto .verde {
+    color: rgb(163, 255, 163);
+}
+
+.texto p {
+    color: #cfcfcf;
+    margin-bottom: 22px;
+    line-height: 1.6;
+    max-width: 420px;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
+
+.boton {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 1.5rem 4rem;
+    border-radius: 99px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+    background: #e1e1e1;
+    transform: scale(1.03);
+}
+
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.imagenes img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 900px) {
+    .general {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .texto p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagenes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    .imagenes {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .imagenes img {
+        border-radius: 12px;
+    }
+
+    .boton {
+        padding: 1rem 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagenes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .imagenes img {
+        border-radius: 8px;
+    }
+
+    .boton {
+        padding: 0.9rem 2.5rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
