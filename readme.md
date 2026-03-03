@@ -11,17 +11,17 @@ Este proyecto es una colección de 15 *landing pages* (páginas de aterrizaje) c
 
 ## 📂 Estructura del Proyecto
 
-El proyecto está organizado de la siguiente manera:
+El proyecto está organizado de la siguiente forma:
 
 ```text
 15-landing pages/
 ├── landing-pages/
-│   ├── index.html          # Página principal con el índice interactivo de todas las landing pages
 │   ├── style.css           # Estilos principales para el índice (modo oscuro premium)
 │   ├── html/               # Contiene los archivos .html individuales de cada landing page
 │   ├── css/                # Contiene los archivos .css específicos de cada landing page
-│   └── images/             # Activos gráficos e imágenes clasificadas por página
-└── readme.md               # Este archivo
+│   └── image/              # Activos gráficos e imágenes clasificadas por página
+└── index.html              # Página principal con el índice interactivo de todas las landing pages
+└── README.md               # Este archivo
 ```
 
 ## 📋 Páginas Incluidas
