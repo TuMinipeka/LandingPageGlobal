@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1900px;
+    min-height: 100vh;
+    padding: 60px 8vw;
+    gap: 40px;
+    position: relative;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    gap: 28px;
+    z-index: 1;
+}
+
+.main-title {
+    font-size: clamp(1.8rem, 5vw, 4rem);
+    color: #2b2b2b;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.text-content {
+    font-size: clamp(0.95rem, 1.2vw, 1.4rem);
+    color: #444;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+.main-button {
+    background-color: #ebd65e;
+    color: #333;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem); /* corregido: era 20vw, un valor erróneo */
+    font-weight: 100;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.main-button:hover {
+    background-color: #e6c200;
+}
+
+.stats-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #2b2114;
+    padding: 40px 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 620px;
+}
+
+.stat-box {
+    color: #fff;
+    text-align: center;
+    flex: 1;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 700;
+}
+
+.stat-box span {
+    font-size: clamp(0.65rem, 0.8vw, 0.85rem);
+    color: #ccc;
+    display: block;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.stat-box img {
+    width: clamp(40px, 5vw, 80px);
+    height: auto;
+    display: block;
+    margin: 4px auto;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    /* Eliminado: left: -190px — rompía el layout en pantallas medianas */
+}
+
+.main-img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ─── Tablet grande (max 1100px) ─── */
+@media (max-width: 1100px) {
+    .main-container {
+        padding: 50px 5vw;
+        gap: 20px;
+    }
+
+    .main-title {
+        font-size: clamp(1.8rem, 4vw, 3.5rem);
+    }
+
+    .main-img {
+        max-width: 420px;
+    }
+}
+
+/* ─── Tablet (max 860px) ─── */
+@media (max-width: 860px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 6vw;
+        gap: 30px;
+        min-height: auto;
+    }
+
+    .text-section {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-title {
+        font-size: clamp(2rem, 6vw, 3.5rem);
+        text-align: center;
+    }
+
+    .text-content {
+        text-align: center;
+        font-size: clamp(0.95rem, 2vw, 1.2rem);
+        max-width: 100%;
+    }
+
+    .stats-box {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .image-section {
+        width: 100%;
+        left: 0; /* neutraliza el offset de escritorio */
+    }
+
+    .main-img {
+        max-width: 380px;
+        width: 70%;
+    }
+}
+
+/* ─── Mobile (max 560px) ─── */
+@media (max-width: 560px) {
+    .main-container {
+        padding: 40px 5vw;
+    }
+
+    .main-title {
+        font-size: clamp(1.6rem, 8vw, 2.5rem);
+    }
+
+    .text-content {
+        font-size: 0.95rem;
+    }
+
+    .main-button {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        white-space: normal; /* permite wrap en móvil si el texto es largo */
+    }
+
+    .stats-box {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        padding: 24px 16px;
+    }
+
+    .stat-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-align: left;
+    }
+
+    .stat-box img {
+        width: 40px;
+        flex-shrink: 0;
+    }
+
+    .main-img {
+        width: 85%;
+        max-width: 280px;
+    }
+}
+
+/* ─── Mobile pequeño (max 380px) ─── */
+@media (max-width: 380px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .main-button {
+        max-width: 100%;
+        padding: 12px 20px;
+    }
+
+    .stats-box {
+        padding: 16px 12px;
+    }
+}
