@@ -56,6 +56,8 @@ No se requiere ningún marco de trabajo (*framework*) o servidor especial para v
 
 ## 👤 Autores
 **Daniel Mayorga**
+
 **Diego Mantilla**
+
 **Sebastian Salas**
 
